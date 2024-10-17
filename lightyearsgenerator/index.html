@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lightyear Generator</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="generator">
+            <p>LightYear: <input type="number" min="1" class="lightyear-input"
+                    placeholder="Enter lightyears"></p>
+            <button class="generate-btn">Generate KM</button>
+            <p>Km: <input type="text" class="km-input" placeholder="Kilometers"
+                    readonly></p>
+            <p>Days: <input type="text" class="day-input" placeholder="Hours"
+                    readonly></p>
+            <p>Hours: <input type="text" class="human-input" placeholder="Hours"
+                    readonly></p>  
+
+
+            <input type="radio" id="humanspeed-input" name="vehicle" value="human">
+            <label for="human">Human 13km/u</label><br>    
+
+            <input type="radio" id="boat-input" name="vehicle" value="boat">
+            <label for="boat">Boat 40km/u</label><br>
+            
+            <input type="radio" id="car-input" name="vehicle" value="car">
+            <label for="car">Car 120km/u</label><br>
+            
+            <input type="radio" id="airplane-input" name="vehicle" value="airplane">
+            <label for="airplane">Airplane 850km/u</label><br>
+            
+            <input type="radio" id="rocket-input" name="vehicle" value="rocket">
+            <label for="rocket">Parker Solar Probe 692,000km/u</label><br>
+
+            <input type="radio" id="warp-input" name="vehicle" value="warp">
+            <label for="warp">Warp speed 1,2928636e+13km/u</label>
+            
+            <p id="Selected-vehicle">How many hours will it take?</p>
+            <p id="Days-vehicle">How many days will it take?</p>
+            <p id="Year-vehicle">How many years will it take?</p>
+            
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>
